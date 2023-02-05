@@ -16,5 +16,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/slf4j-simple.jar"/>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/stanford-corenlp-4.5.2.jar"/>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/stanford-corenlp-4.5.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/stanford-corenlp-4.5.2-models.jar"/>
+	<classpathentry kind="lib" path="stanford-corenlp-4.5.2/stanford-corenlp-4.5.2-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

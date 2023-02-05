@@ -1,0 +1,41 @@
+Input: 
+Question: 
+A constant named for a scientist with this surname, which varies with "J times J plus one," appears in a law named for that scientist which can be found by approximating the Brillouin ("BREE-yoo-ahn") function. A scientist with this surname, the first namesake of a law describing the magnetic susceptibility in the paramagnetic region, also names a law by which some materials' (*) magnetization varies inversely with temperature. That scientist with this surname names a temperature above which materials lose their ferromagnetism. Two scientists with this surname built on the work of Henri Becquerel ("BECK-uh-rell") by isolating polonium and radium. For 10 points, give this surname shared by the scientists who named radioactivity, Pierre and Marie. 
+Answer: Curie 
+Output: 
+Brillouin function
+magnetic susceptibility
+paramagnetic region 
+ferromagnetism 
+Henri Becquerel
+polonium 
+radium
+Marie
+Pierre
+
+Input: 
+Question: A technique named for this scientist can be used to calculate a ratio between two waves called the E/A ratio. Trucks called “[this scientist] on Wheels” are used to observe and study tornadoes. A quantity named for this scientist is the minimum temperature achievable using his namesake laser cooling. Canal rays were used to measure the (*) transverse form of an effect named for this scientist in an experiment conducted by Ives and Stilwell. The change in the absorption spectra of stars can be explained by this scientist’s effect. For 10 points, what scientist whose namesake effect explains why the pitch of an incoming siren increases.
+Answer: Doppler
+Output: 
+E/A ratio 
+tornado trucks
+laser cooling 
+Canal rays
+Ives and Stillwell
+absoprtion spectra 
+siren pitch 
+
+Input: 
+Question: The effect of one form of this material on the moment of inertia of a pile of closely spaced parallel thin disks was studied by E. L. Andronikashvili. The dissolution of one form of this material into another form of it is the cooling mechanism in dilution refrigerators. David Lee, Douglas Osheroff, and Robert Richardson discovered a novel phase of one form of this material by cooling it with adiabatic compression. A parabolic minimum in the dispersion relation of one form of this material is occupied by quantum excitations likened to (*) vortex rings. Second sound in one form of this material is explained by Lev Landau’s two-fluid model. For one form of this material, a plot of heat capacity versus temperature displays a lambda transition between a normal phase and a superfluid phase. For 10 points, name this fluid material made of an inert element. 
+Answer: helium 
+Output:  
+E.L Andronikashivili 
+dilution refrigerators
+David Lee 
+Douglas Osheroof 
+Robert Richardson 
+adiabatic compression
+vortex rings 
+Landau's two-fluid model 
+lambda transition 
+inert element

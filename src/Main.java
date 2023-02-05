@@ -21,21 +21,21 @@ import edu.stanford.nlp.pipeline.*;
 //import edu.stanford.nlp.util.*;
 import javax.xml.*; 
 public class Main {
-	public static ArrayList<String> encyclopedia = new ArrayList<String>(); 
+	public static TreeMap<String, String> encyclopedia = new TreeMap<String, String>(); 
 	//stores all the words ever 
 	//public static HashMap<String, String> testingdict = new HashMap<String, String>(); 
 	public static ArrayList<String> testkeys = new ArrayList<String>(); 
 	public static ArrayList<String> testdata = new ArrayList<String>();
 	public static TreeMap<String, ArrayList<String>> categories = new TreeMap<String, ArrayList<String>> (); //use ner to group things later
 	public static Properties props = new Properties();
-   
+	public static StanfordCoreNLP pipeline ; 
   //  public static StanfordCoreNLP pipeline;
 	//update with a couple of lists attached to a couple of keywords 
-   public static void main(String[] args) {
+	 public static void main(String[] args) {
  
       try {
     	 props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse");
-    	 StanfordCoreNLP pipeline = new StanfordCoreNLP(props); 
+    	 pipeline = new StanfordCoreNLP(props); 
          File inputFile = new File("Wikipedia-Physics-Articles.xml");
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -63,7 +63,7 @@ public class Main {
                System.out.println("Title : "
                    + eElement.getElementsByTagName("title").item(0).getTextContent()) ;
               
-               encyclopedia.add(eElement.getElementsByTagName("text").item(0).getTextContent());
+               encyclopedia.put(eElement.getElementsByTagName("title").item(0).getTextContent(), eElement.getElementsByTagName("text").item(0).getTextContent());
             }
             
          }
@@ -79,6 +79,9 @@ public class Main {
 		   doc = encyclopedia.get(i); 
 		   CoreDocument newdoc= new CoreDocument(doc); 
 		   pipeline.annotate(newdoc); 
+		   // nouns 
+		   //group nouns w dependencies 
+		   // maybe later do ner 
 	   }
 	
 	   //do stanford nlp stuff 
@@ -98,6 +101,7 @@ public class Main {
    private static ArrayList<String> calculateList (String keyword) {
 	   // getting random trywords from the articles 
 	  //lemmatize the keyword and the tryword i suppose  
+	   String srcarticle = encyclopedia.get(keyword); 
 	   ArrayList<String> trys = new ArrayList<String>(); 
 	   SortedMap<Double, String> rankedwords
        = new TreeMap<Double, String>();
